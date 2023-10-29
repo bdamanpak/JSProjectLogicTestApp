@@ -97,7 +97,8 @@ export const Shopping = () => {
                                 quantity[0] -= 1;
                                 if (quantity[0] < 0)
                                     quantity[0] = 0;
-                                sum -= 25;
+                                if(quantity[0] > 0)
+                                    sum -= 25;
                                 if (sum < 0)
                                     sum = 0;
                                 console.log(sum);
@@ -196,7 +197,8 @@ export const Shopping = () => {
                                 quantity[1] -= 1;
                                 if (quantity[1] < 0)
                                     quantity[1] = 0;
-                                sum -= 100;
+                                if(quantity[1] > 0)
+                                    sum -= 100;
                                 if (sum < 0)
                                     sum = 0;
                                 console.log(sum);
@@ -295,7 +297,8 @@ export const Shopping = () => {
                                 quantity[2] -= 1;
                                 if (quantity[2] < 0)
                                     quantity[2] = 0;
-                                sum -= 65;
+                                if(quantity[2] > 0)
+                                    sum -= 65;
                                 if (sum < 0)
                                     sum = 0;
                                 console.log(sum);
